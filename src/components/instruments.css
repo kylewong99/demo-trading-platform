@@ -1,0 +1,11 @@
+.up>td:nth-child(n+2){
+  color: green;
+}
+
+.down>td:nth-child(n+2) {
+  color: red;
+}
+
+.none>td:nth-child(n+2) {
+  color: black;
+}
