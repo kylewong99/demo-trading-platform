@@ -1,10 +1,10 @@
 import React from "react";
 import "./Summary.css";
-import { Row, Col, Container, Card } from "react-bootstrap";
-import logo1 from "../assets/Group -1.png";
-import logo2 from "../assets/Group -2.png";
-import logo3 from "../assets/Group -3.png";
-import logo4 from "../assets/Group 17.png";
+import { Row, Col, Card } from "react-bootstrap";
+import logo1 from "../assets/Group 17.png";
+import logo2 from "../assets/Group -1.png";
+import logo3 from "../assets/Group -2.png";
+import logo4 from "../assets/Group -3.png";
 
 const Summary = () => {
   return (

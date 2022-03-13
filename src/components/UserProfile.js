@@ -1,6 +1,6 @@
 import React from "react";
 import profileBackground from "../assets/Mask Group 2.png";
-import { Row, Col, Container, Card, Button } from "react-bootstrap";
+import { Row, Col, Card, Button } from "react-bootstrap";
 import "./UserProfile.css";
 
 const UserProfile = (props) => {
