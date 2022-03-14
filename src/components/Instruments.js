@@ -28,16 +28,16 @@ const Instruments = () => {
           response.data.map((item, index) => {
             let newPrice = parseFloat(item.Bid);
             let oldPrice = parseFloat(previousMarketData[index].Bid);
-            let percentage = (
+            let percentage = Math.abs((
               ((newPrice - oldPrice) / ((newPrice + oldPrice) / 2)) *
               100
-            ).toFixed(2);
+            )).toFixed(4);
 
             item.percentage = percentage.toString() + "%";
 
-            if (newPrice > oldPrice) {
+            if (newPrice < oldPrice) {
               item.changes = "down";
-            } else if (newPrice < oldPrice) {
+            } else if (newPrice > oldPrice) {
               item.changes = "up";
             } else {
               item.changes = "none";
